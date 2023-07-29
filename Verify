@@ -1,20 +1,14 @@
 local keyChecked = false
 local hwid = nil
+local hwidplr = game:GetService("RbxAnalyticsService"):GetClientId()
 local player = game.Players.LocalPlayer
 
-local hwidplr = game:GetService("RbxAnalyticsService"):GetClientId()
-local hwid = {
-    ["HWIDLucca"] = {42609652-61B1-4DCD-A13B-EAEB01294ED8},
+local acessHWID = {
+    "42609652-61B1-4DCD-A13B-EAEB01294ED8",
 }
 
-if table.find(hwid["HWIDLucca"], hwidplr) then
-    keyChecked = true
-end
-
-if keyChecked == true then
-    if hhwidplr == hwid then
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Switch123123/Main/main/Switch.lua"))()
-    else
-        player:Kick("Você não adquiriu o script! Não tente usar-lo sem uma key!")
-    end
+if acessHWID == hwidplr then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Switch123123/Main/main/Switch.lua"))()
+else
+    player:Kick("Compre o script!")
 end
