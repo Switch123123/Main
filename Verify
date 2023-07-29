@@ -4,10 +4,10 @@ local hwidplr = game:GetService("RbxAnalyticsService"):GetClientId()
 local player = game.Players.LocalPlayer
 
 local hwid = {
-    ["42609652-61B1-4DCD-A13B-EAEB01294ED8"],
+    ["HWIDLucca"] = {"42609652-61B1-4DCD-A13B-EAEB01294ED8"},
 }
 
-if table.find(hwid) then
+if table.find(hwid["HWIDLucca"]) then
     keyChecked = true
 end
 
