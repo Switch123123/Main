@@ -1,12 +1,13 @@
-_G.Key = "lasdkmo1239asjkd81823"
-
 local keyChecked = false
 local hwid = nil
 local hwidplr = game:GetService("RbxAnalyticsService"):GetClientId()
 local player = game.Players.LocalPlayer
 
-if _G.Key == "lasdkmo1239asjkd81823" then
-    hwid = "42609652-61B1-4DCD-A13B-EAEB01294ED8"
+local hwid = {
+    ["42609652-61B1-4DCD-A13B-EAEB01294ED8"],
+}
+
+if table.find(hwid) then
     keyChecked = true
 end
 
@@ -16,6 +17,4 @@ if keyChecked == true then
     else
         player:Kick("Você não adquiriu o script! Não tente usar-lo sem uma key!")
     end
-    else
-        player:Kick("Key incorreta!")
 end
