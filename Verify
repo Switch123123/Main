@@ -7,7 +7,7 @@ local acessHWID = {
     "42609652-61B1-4DCD-A13B-EAEB01294ED8",
 }
 
-if acessHWID == hwidplr then
+if hwidplr == acessHWID then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Switch123123/Main/main/Switch.lua"))()
 else
     player:Kick("Compre o script!")
